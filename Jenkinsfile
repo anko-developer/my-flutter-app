@@ -19,7 +19,7 @@ pipeline {
 
     stage('Test') {
       steps {
-        sh 'flutter pub get && xvfb-run flutter test'
+        sh 'flutter pub get && xvfb-run --auto-servernum flutter test'
       }
     }
 
