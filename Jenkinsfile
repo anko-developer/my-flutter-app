@@ -3,7 +3,7 @@ pipeline {
 
   environment {
     FLUTTER_HOME        = '/opt/flutter'
-    PATH                = "${FLUTTER_HOME}/bin:${PATH}"
+    PATH                = "/opt/flutter/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
     AWS_DEFAULT_REGION  = 'ap-northeast-2'
     // ⚠️ 4-cloudfront-setup.sh 실행 후 출력된 ID로 교체
     S3_STAGING   = 's3://my-app-staging-20260709'
